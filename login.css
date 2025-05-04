@@ -1,0 +1,128 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-image: url('loginpage_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    padding: 20px;
+}
+
+.logo {
+    height: 70px;
+    width: 200px;
+}
+
+/* Centering main form */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form box styling */
+.box {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 50px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.box h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+/* Input fields */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 15px;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Submit button */
+#submit {
+    width: 100%;
+    height: 45px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+#submit:hover {
+    background-color: #e50914;
+}
+
+/* Checkbox and label */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    justify-content: start;
+    color: #ccc;
+}
+
+.checkbox-label input {
+    margin-right: 8px;
+}
+
+/* Signup link */
+.signup-text {
+    font-size: 16px;
+}
+
+.signup-text a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* Hidden but accessible labels */
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
